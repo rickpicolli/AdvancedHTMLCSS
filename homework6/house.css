@@ -1,0 +1,39 @@
+.flex {
+    position: relative;
+    width: calc(100% - 70%);
+    height: 150px;
+    left: calc(100% - 70%);
+    
+}
+
+img {
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    border: none;
+    clear: left;
+}
+
+.text {
+    position: relative;
+}
+
+
+body {
+    background-color: beige;
+}
+
+button {
+    margin-top: 190px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: orangered;
+}
