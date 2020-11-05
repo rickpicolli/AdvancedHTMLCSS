@@ -1,0 +1,69 @@
+* {
+    background-color:#C0DEED;;
+}
+
+.content {
+    position: relative;
+    /* text-align: center; */
+    width:100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+#sky {
+
+    position: relative;
+    top:0px;left:0px;
+    width:200%;
+    height:200px;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    background: url(clouds.png) repeat-x;
+    animation: bg-slide 30s linear infinite;
+}
+
+.airplane {
+    background-color:#C0DEED;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.company {
+    position: static;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    top: 300px;
+    width: 210px;
+    
+    animation: banner-slide  10s 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes bg-slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* @keyframes banner-slide {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(100%); } */
+    /* 0% {left: 0px;}
+    25% {left: 200px;}
+    50% {left: 100px;}
+    100% {left: 100px} */
+/* } */
+
+@keyframes banner-slide  {
+    0%   {color: black; left: 0px; top: 300px;}
+    50%  {color: black; left: calc(100% - 210px); top: 300px;}
+    75%  {color: black;left: calc(50% - 5%); top: 300px }
+    100%  {color: red; left: calc(50% - 5%); top: 400px }
+
+  }
