@@ -40,7 +40,7 @@ body {
     position: relative;
     top: 300px;
     width: 210px;
-    
+    text-align: center;
     animation: banner-slide  10s 1;
     animation-fill-mode: forwards;
 }
@@ -53,14 +53,9 @@ button {
     animation: button-slide 1s infinite;
 }
 
-/* button:hover {
-    background-color: beige;
-} */
-
 a {
     text-decoration: none;
     animation: a-slide 1s infinite;
-    /* color: orangered; */
 }
 
 
