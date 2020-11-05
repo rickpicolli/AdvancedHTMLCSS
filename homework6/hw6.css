@@ -46,18 +46,21 @@ body {
 }
 
 button {
+    padding: 20px;
     margin-top: 190px;
-    background-color: aqua !important;
+    background-color: aqua;
     border-radius: 10px;
+    animation: button-slide 1s infinite;
 }
 
-button:hover {
-    background-color: aliceblue;
-}
+/* button:hover {
+    background-color: beige;
+} */
 
 a {
     text-decoration: none;
-    color: orangered;
+    animation: a-slide 1s infinite;
+    /* color: orangered; */
 }
 
 
@@ -74,3 +77,16 @@ a {
     100%  {color: red; left: calc(50% - 5%); top: 400px }
 
   }
+
+  @keyframes button-slide  {
+    0%   {background-color: aqua; color: red}
+    100%  {background-color: red; color: white;}
+
+
+  }
+  @keyframes a-slide  {
+    0%   {color: red}
+    100%  {color: white;}
+
+
+  } 
